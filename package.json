@@ -1,0 +1,20 @@
+{
+  "name": "react-native-lomocoin-push",
+  "version": "0.0.1",
+  "description": "App Push Notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "push",
+    "notification"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lomocoin/react-native-lomocoin-rongcloud.git"
+  },
+  "homepage": "https://github.com/lomocoin/react-native-lomocoin-rongcloud#readme",
+  "author": "lomocoin",
+  "license": "MIT"
+}
