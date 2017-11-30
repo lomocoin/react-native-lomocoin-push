@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4AE5FF31FCFE31400D1B2BC /* PushNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = A4D90C821FB2F8F5006CE344 /* PushNotification.h */; };
 		A4D90C841FB2F8F5006CE344 /* PushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D90C831FB2F8F5006CE344 /* PushNotification.m */; };
 		A4D90C851FB2F8F5006CE344 /* PushNotification.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4D90C821FB2F8F5006CE344 /* PushNotification.h */; };
 		A4D90C8F1FB30053006CE344 /* GTExtensionSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D90C8D1FB30053006CE344 /* GTExtensionSDK.framework */; };
@@ -84,6 +85,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A4AE5FF11FCFE2E300D1B2BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4AE5FF31FCFE31400D1B2BC /* PushNotification.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		A4D90C7E1FB2F8F5006CE344 /* PushNotification */ = {
 			isa = PBXNativeTarget;
@@ -92,6 +104,7 @@
 				A4D90C7B1FB2F8F5006CE344 /* Sources */,
 				A4D90C7C1FB2F8F5006CE344 /* Frameworks */,
 				A4D90C7D1FB2F8F5006CE344 /* CopyFiles */,
+				A4AE5FF11FCFE2E300D1B2BC /* Headers */,
 			);
 			buildRules = (
 			);
