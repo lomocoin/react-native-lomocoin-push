@@ -16,5 +16,27 @@
   },
   "homepage": "https://github.com/lomocoin/react-native-lomocoin-push#readme",
   "author": "lomocoin",
-  "license": "MIT"
+  "license": "MIT",
+  "rnpm": {
+    "ios": {
+      "sharedLibraries": [
+        "libz",
+        "libc++",
+        "libsqlite3",
+        "Security",
+        "MobileCoreServices",
+        "SystemConfiguration",
+        "CoreTelephony",
+        "AVFoundation",
+        "JavaScriptCore",
+        "UserNotifications",
+        "CoreLocation",
+        "AdSupport",
+        "CoreFoundation",
+        "Foundation",
+        "UIKit"
+      ]
+    }
+  },
+  "dependencies": {}
 }

@@ -23,7 +23,7 @@ react-native link
 - SystemConfiguration.framework
 - CoreTelephony.framework
 - AVFoundation.framework
-- CoreLocation.framework
+- CoreLocation.framework
 - UserNotifications.framework (iOS 10 及以上需添加，使用 Optional 方式接入)
 - AdSupport.framework   （如果使用无IDFA版本SDK，则需删除该 AdSupport 库）
 
