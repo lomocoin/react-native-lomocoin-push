@@ -8,10 +8,6 @@
 
 #import "PushNotification.h"
 
-#ifdef NSFoundationVersionNumber_iOS_9_x_Max
-#import <UserNotifications/UserNotifications.h>
-#endif
-
 #import <GTSDK/GeTuiSdk.h>
 
 @implementation PushNotification
@@ -41,7 +37,7 @@ RCT_EXPORT_METHOD(setupPush) {
             }
         }];
     }
-    else if ([application
+    else if ([[UIApplication sharedApplication]
               respondsToSelector:@selector(registerUserNotificationSettings:)]) {
         //iOS 8 or later
         UIUserNotificationSettings *settings = [UIUserNotificationSettings
@@ -49,7 +45,7 @@ RCT_EXPORT_METHOD(setupPush) {
                                                                   UIUserNotificationTypeSound |
                                                                   UIUserNotificationTypeAlert)
                                                 categories:nil];
-        [application registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
     }
     
     // register Notifications
@@ -107,7 +103,7 @@ RCT_EXPORT_METHOD(unbindAlias:(NSString *)alias sequenceNum:(NSString *)aSn isSe
  */
 RCT_EXPORT_METHOD(setBadge:(NSInteger)value) {
     [GeTuiSdk setBadge:value]; //同步本地角标值到服务器
-    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:badge]; //APP 显示角标需开发者调用系统方法进行设置
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:value]; //APP 显示角标需开发者调用系统方法进行设置
 }
 
 /*!
@@ -119,3 +115,4 @@ RCT_EXPORT_METHOD(resetBadge) {
 }
 
 @end
+
