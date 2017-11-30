@@ -59,7 +59,7 @@ RCT_EXPORT_METHOD(setupPush) {
 /*!
  * 设置 个推 SDK
  */
-RCT_EXPORT_METHOD(setupWithAppId:(NSString *)kGtAppId
+RCT_EXPORT_METHOD(setupPushNotification:(NSString *)kGtAppId
                   appKey:(NSString *)kGtAppKey
                   appSecret:(NSString *)kGtAppSecret) {
     dispatch_async(dispatch_get_main_queue(), ^{

@@ -12,9 +12,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lomocoin/react-native-lomocoin-rongcloud.git"
+    "url": "git+https://github.com/lomocoin/react-native-lomocoin-push"
   },
-  "homepage": "https://github.com/lomocoin/react-native-lomocoin-rongcloud#readme",
+  "homepage": "https://github.com/lomocoin/react-native-lomocoin-push#readme",
   "author": "lomocoin",
   "license": "MIT"
 }
